@@ -1,9 +1,9 @@
 <!DocType>
 <html xmlns: xmlns:th="http://thymeleaf.org">
-    <head>
-        <title>Technical Blog Application</title>
+    <head th:replace="layout :: site-head">
+        <title>Spring MVC Application</title>
     </head>
-
+    <header th:replace="layout :: logged-out"></header>
     <body>
         <h1>All technical posts</h1>
         <main id="posts">
